@@ -11,7 +11,7 @@ const addThemeClass = (bodyClass, btnClass) => {
 const getBodyTheme = localStorage.getItem('portfolio-theme')
 const getBtnTheme = localStorage.getItem('portfolio-btn-theme')
 
-addThemeClass(getBodyTheme, getBtnTheme)
+console.log(getBodyTheme, getBtnTheme)
 
 const isDark = () => body.classList.contains('dark')
 

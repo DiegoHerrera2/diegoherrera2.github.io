@@ -105,6 +105,7 @@ button {
 .link {
   color: var(--clr-primary);
   padding: 0 0 0.3em 0;
+  
   position: relative;
 }
 
@@ -295,6 +296,10 @@ main {
   text-align: center;
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .project:hover {
@@ -319,8 +324,15 @@ main {
   color: var(--clr-fg-alt);
 }
 
+.project__footer {
+  border-top: 2px solid var(--clr-fg-alt);
+  padding: 1em;
+  margin-top: 1.5em;
+}
+
 .project .link--icon {
   margin-left: 0.5em;
+
 }
 
 .skills__list {
