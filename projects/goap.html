@@ -50,37 +50,55 @@
 
     <main>
       <div class="about center">
-        <h1><span class="about__name">GOAP - Supervivencia</span></h1>
+        <h1><span class="about__name">GOAP - Survival</span></h1>
         <h3 class="about__role">Diego Herrera Mendoza</h3>
         <div style="text-align: justify; white-space: pre-line;">
           <p>
-            GOAP en un Campamento de Supervivencia
+            GOAP in a Survival Camp
 
-            <h4>Descripción</h4>
-            Proyecto en Unity que usa GOAP para simular un campamento apocalíptico con zombies.
+            <h4>Description</h4>
+            Project in Unity that uses GOAP to simulate an apocalyptic camp with zombies.
 
-            <video controls>
+            <video controls style="width: 100%; max-width: 800px;"></video>
               <source src="../vid/goap.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
 
-            <h4>Roles</h4>
-            <strong>Médico:</strong> Trata a los infectados si hay vendas.
+            <h4>Adventurer:</h4>
+            Searches for resources (bullets and bandages). If infected, goes to treatment.
 
-            <strong>Policías:</strong> Defienden la puerta con balas. Si se rompe, priorizan su supervivencia.
+            <strong>Explore:</strong> Goes to a distant area from the camp to gather resources.
 
-            <strong>Aventureros:</strong> Buscan recursos (balas y vendas). Si vuelven infectados, van a tratamiento.
+            <strong>Return to camp:</strong> After gathering resources, returns to the camp to drop off collected items.
 
-            <strong>Zombies:</strong> Intentan romper la puerta y atacar a los humanos.
+            <strong>Go to the healing area:</strong> If the adventurer knows they are infected, they go to the doctor’s area for treatment.
 
-            <h4>Dinámica</h4>
-            Los aventureros recolectan recursos esenciales.
+            <strong>Wait to be treated:</strong> The doctor works slowly, so the adventurer must wait for treatment. After treatment, they can resume work.
 
-            Los policías defienden el campamento de los zombies utilizando balas como recurso.
+            <h4>Doctor:</h4>
+            Treats infected if bandages are available. Can hold up to one bandage at a time.
 
-            El médico gestiona vendas para tratar infectados.
+            <strong>Collect bandages:</strong> To treat someone, the doctor needs to have bandages in their inventory.
 
-            Los zombies buscan destruir la puerta y convertir a los humanos en más zombies.
+            <strong>Treat patient:</strong> Goes to the first patient in line and removes their infection status.
+
+            <h4>Police Officer:</h4>
+            Defends the gate with bullets. Can hold up to 10 bullets at a time. If it breaks, prioritizes their own survival.
+
+            <strong>Defend themselves:</strong> The police officer prioritizes their own safety once the gate is broken and zombies are near.
+
+            <strong>Defend the camp:</strong> If no zombies are nearby or the gate is intact, the officer shoots zombies from the defense area to protect the gate.
+
+            <strong>Collect ammunition:</strong> The officer must have ammunition to perform other actions. They gather it from the camp's supply box.
+
+            <strong>Go to the camp's defense area:</strong> Moves to the defense area to guard the gate, provided no other officer is already defending.
+
+            <h4>Zombie:</h4>
+            Tries to break the gate and attack humans.
+
+            <strong>Break the gate:</strong> The zombie moves to the gate and damages it until it breaks.
+
+            <strong>Kill humans:</strong> Once the gate is destroyed, the zombie seeks the nearest human to convert them.
           </p>
         </div>
       </div>
